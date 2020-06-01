@@ -1,0 +1,74 @@
+.cta-section {
+    position: relative;
+    padding: 72px 0 75px;
+    padding-bottom: 70px;
+    background-color: #0a824e;
+    color: #fff;
+    background-image: url(../img/mobile/app-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        background-image: url(../img/mobile/app-tab.jpg);
+        padding: 74px 0 79px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 80px 0 90px;
+        background-image: url("../img/cta/app-cta.jpg");
+    }
+}
+.cta-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(10, 128, 77, 0.6);
+}
+.section-cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.cta-title {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 51px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 45px;
+    }
+}
+.cta-title strong {
+  letter-spacing: 2.2px;
+}
+.cta-button {
+    padding: 0 43px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #2bb279;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    transition: background-color 0.2s ease;
+    &:hover, &:focus {
+      background-color: lighten(#9df5d0, 15%);
+    }
+}

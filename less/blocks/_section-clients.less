@@ -1,0 +1,208 @@
+.section-clients {
+    padding: 75px 0 165px;
+    background-color: #FFF;
+        // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 75px 0 80px;
+    }
+     //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 110px 0 95px;
+        background-image: url("../img/client/bg-clients.svg");
+        background-repeat: no-repeat;
+        background-position: center 156px;
+        background-size: auto;
+    }
+}
+.section-clients-title {
+    
+    margin-bottom: 36px;
+    text-align: center;
+        // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 28px;
+    }
+     //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+    margin-bottom: 72px;
+    }
+}
+.section-title-clients {
+    
+        // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+   
+    }
+        //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 72px;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+    }
+}
+.section-clients-header {
+    margin-bottom: 22px;
+    text-align: center;
+        // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 65px;
+    }
+     //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 80px;
+    }
+}
+.section-clients-carousel {
+    max-width: 750px;
+    margin: 0 auto;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 9px;
+    max-width: 520px;
+    margin: 0 auto;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 0;
+        max-width: 467px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        max-width: 750px;
+    }
+}
+.testimonial-carousel {
+    width: 770px;
+    margin: 0 auto;
+}
+.testimonial-text {
+    margin-bottom: 10px;
+    color: #808080;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    text-align: center;
+    // Медиа запрос для планшетов и выше
+     @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 34px;
+        margin-bottom: 25px;
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    // Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 40px;
+        margin-bottom: 55px;
+        p {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+    }
+}
+.testimonial-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+.testimonial-user-foto {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+    }
+}
+.testimonial-user-name {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.clients-carousel.owl-carousel .owl-nav button.owl-prev {
+    width: 52px;
+    height: 52px;
+    background-image: url(../img/carousel/button_left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;  
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -20px;
+    transform: translate(-100%, +100%);
+    outline: none;
+    &:hover {
+        opacity: 0.7;
+    }
+    span {
+        display: none;
+    }
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        top: 10px;
+        bottom: auto;
+        margin-left: 0;
+        left: 0;
+        transform: unset;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        top: 17px;
+        left: -52px;
+        transform: translateX(-100%);
+    }
+}
+.clients-carousel.owl-carousel .owl-nav button.owl-next {
+    width: 52px;
+    height: 52px; 
+    background-image: url(../img/carousel/button_right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: 20px;
+    transform: translateY(100%);
+    outline: none;
+    &:hover {
+        opacity: 0.7;
+    }
+    span {
+        display: none;
+    }
+     // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        top: 10px;
+        right: 0;
+        left: auto;
+        margin-left: 0;
+        transform: unset;
+    }
+     //Медиа запрос для десктопов
+     @media (min-width: 1200px) {
+        top: 17px;
+        right: -46px;
+        transform: translateX(100%);
+    }
+}

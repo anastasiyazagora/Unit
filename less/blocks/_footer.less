@@ -1,0 +1,114 @@
+.footer__content {
+    padding: 54px 0 60px;
+    background-color: #1a1a1a;
+    color: #eeeeee;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 68px 0 75px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        padding: 80px 0 65px;
+    }
+}
+.footer-content-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: column;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 55px;
+    }
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-right: 34px;
+        margin-bottom: 0;
+    }
+}
+.footer-nav-block {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    text-decoration: none;
+    color: #fff;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-right: 41px;
+    }
+}
+.footer-nav-block:last-child {
+    margin: 0;
+}
+.footer-social-networks {
+    display: flex;
+    margin-bottom: 39px;
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 47px;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+.footer-social-networks-block {
+    margin-right: 28px;
+    display: inline-flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #313131;
+    border-radius: 50%;
+    &:hover{
+        background-color: rgba(255, 244, 244, 0.4);
+    }
+}
+
+.footer-social-networks-block:last-child {
+    margin-right: 0;
+}
+.footer-text {
+    width: 185px;
+    margin: 0 auto;
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+        width: auto;
+    }
+}
+.footer-text p {
+    margin: 0;
+    text-align: center;    
+    color: #fff;
+    opacity: 0.3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.footer-text strong {
+    letter-spacing: 1.4px;
+}

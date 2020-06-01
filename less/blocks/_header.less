@@ -1,0 +1,233 @@
+.header {
+  position: relative;
+  background-color: #63686b;
+  color: #fff;
+  background-image: url("../img/header/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    height: 568px;
+    min-height: auto;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    height: 870px;
+  }
+}
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header__content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+.header__logo {
+  font-size: 62px;
+  letter-spacing: 12.4px;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 82px;
+    letter-spacing: 16.4px;
+    margin-bottom: 25px;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    font-size: 96px;
+    letter-spacing: 19.2px;
+    margin-bottom: 70px;
+  }
+}
+.header__desc {
+  text-align: center;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 70px;
+    max-width: 562px;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 725px;
+  }
+}
+.header__desc p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+span {
+  letter-spacing: 1.6px;
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    letter-spacing: 2px;
+  }
+}
+.header__form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  @media (min-width: 520px) {
+    width: 490px;
+  }
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+  }
+}
+.header__form-input {
+  width: 100%;
+  margin-bottom: 10px;
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    width: 200px;
+    margin-right: 20px;
+  }
+}
+.header__form-submit {
+  .button-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
+.input {
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 1, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+  &::placeholder {
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 1, 0.7);
+  }
+}
+.button-submit {
+  padding: 0 30px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: #50e3a4;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  transition: background-color 0.2s ease;
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: darken(#50e3a4, 15%);
+  }
+}
+.header__scroll {
+  display: none;
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 48px;
+  }
+}
+.header__top-buttons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header__nav-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  &:hover{
+    background-color: rgba(255, 244, 244, 0.4);
+}
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    left: 20px;
+    right: auto;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    top: 60px;
+    left: 54px;
+    right: auto;
+  }
+}
+.header__search-button {
+  display: none;
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    &:hover{
+      background-color: rgba(255, 244, 244, 0.4);
+  }
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    top: 60px;
+    right: 54px;
+  }
+}
+
